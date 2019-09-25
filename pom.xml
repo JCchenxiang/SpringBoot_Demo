@@ -11,11 +11,13 @@
     <groupId>com.xchen.cn</groupId>
     <artifactId>springbootdemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>springbootdemo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -31,101 +33,6 @@
             </exclusions>
         </dependency>
 
-        <!--MYSQL-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.35</version>
-        </dependency>
-
-        <!--mybatis-->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.2.0</version>
-        </dependency>
-
-        <!--druid-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.18</version>
-        </dependency>
-
-        <!--mybatis generator-->
-        <dependency>
-            <groupId>org.mybatis.generator</groupId>
-            <artifactId>mybatis-generator-core</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-
-        <!--jsp页面使用jstl标签-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-
-        <!--用于编译jsp-->
-        <!-- tomcat支持 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <!--修改jsp页面不重启，热部署-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
-        </dependency>
-
-        <!-- PageHelper工具 start -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>5.1.2</version>
-        </dependency>
-
-        <!-- gson -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.2</version>
-        </dependency>
-
-
-        <!--添加junit环境的jar包-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <!-- 连接elasticsearch  -->
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/transport -->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>transport</artifactId>
-            <version>6.2.4</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>7.2.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>7.2.0</version>
-        </dependency>
 
         <!--log4j-->
         <dependency>
@@ -138,43 +45,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j</artifactId>
             <version>1.3.8.RELEASE</version>
-        </dependency>
-
-        <!--fastJson-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.46</version>
-        </dependency>
-
-        <!-- SpringBoot中使用 Shiro 做用户、角色、权限管理 -->
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-spring</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
-        <!-- swagger生成接口API -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.7.0</version>
-        </dependency>
-        <!-- 接口API生成html文档 -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.6.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.skywalking/apm-toolkit-trace -->
@@ -182,8 +56,26 @@
             <groupId>org.apache.skywalking</groupId>
             <artifactId>apm-toolkit-trace</artifactId>
             <version>6.2.0</version>
+        </dependency>
+
+        <!-- 引入thymeleaf模板引擎-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-log4j-1.x</artifactId>
+            <version>6.2.0</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -203,44 +95,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
 
-
-
-            </plugin>
-            <!-- Mybatis逆向工程插件 -->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.5</version>
-                <dependencies>
-                    <dependency>
-                        <groupId> mysql</groupId>
-                        <artifactId> mysql-connector-java</artifactId>
-                        <version>5.1.35</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.mybatis.generator</groupId>
-                        <artifactId>mybatis-generator-core</artifactId>
-                        <version>1.3.2</version>
-                    </dependency>
-                </dependencies>
-                <executions>
-                    <execution>
-                        <id>Generate MyBatis Artifacts</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!--允许移动生成的文件 -->
-                    <verbose>true</verbose>
-                    <!-- 是否覆盖 -->
-                    <overwrite>false</overwrite>
-                    <!-- 自动生成的配置 -->
-                    <configurationFile>
-                        src/main/resources/mybatis-generator.xml</configurationFile>
-                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+Class-Path: jackson-core-2.9.9.jar lang-mustache-client-6.2.4.jar myba
+ tis-generator-core-1.3.2.jar lucene-grouping-8.0.0.jar pagehelper-5.1
+ .2.jar reindex-client-6.2.4.jar assertj-core-3.11.1.jar httpcore-nio-
+ 4.4.11.jar hibernate-validator-6.0.17.Final.jar elasticsearch-x-conte
+ nt-7.2.0.jar accessors-smart-1.2.jar spring-aop-5.1.8.RELEASE.jar fas
+ tjson-1.2.46.jar jackson-dataformat-cbor-2.9.9.jar swagger-annotation
+ s-1.5.13.jar lucene-spatial3d-8.0.0.jar log4j-core-2.11.2.jar springf
+ ox-swagger2-2.7.0.jar springfox-swagger-common-2.7.0.jar jsonassert-1
+ .5.0.jar lucene-spatial-extras-8.0.0.jar lucene-queryparser-8.0.0.jar
+  spring-plugin-metadata-1.2.0.RELEASE.jar jna-4.5.1.jar spring-boot-s
+ tarter-log4j-1.3.8.RELEASE.jar hamcrest-library-1.3.jar spring-boot-s
+ tarter-2.1.6.RELEASE.jar lucene-join-8.0.0.jar spring-boot-starter-js
+ on-2.1.6.RELEASE.jar netty-handler-4.1.36.Final.jar gson-2.8.2.jar lu
+ cene-highlighter-8.0.0.jar mybatis-spring-boot-starter-1.2.0.jar java
+ ssist-3.21.0-GA.jar netty-resolver-4.1.36.Final.jar lucene-backward-c
+ odecs-8.0.0.jar jsqlparser-1.0.jar spring-web-5.1.8.RELEASE.jar mocki
+ to-core-2.23.4.jar spring-expression-5.1.8.RELEASE.jar spring-context
+ -5.1.8.RELEASE.jar snakeyaml-1.23.jar commons-beanutils-1.9.3.jar mys
+ ql-connector-java-5.1.35.jar swagger-models-1.5.13.jar lucene-analyze
+ rs-common-8.0.0.jar commons-collections-3.2.2.jar jackson-datatype-js
+ r310-2.9.9.jar percolator-client-6.2.4.jar guava-18.0.jar xmlunit-cor
+ e-2.6.2.jar shiro-spring-1.4.0.jar junit-4.12.jar shiro-cache-1.4.0.j
+ ar spring-jdbc-5.1.8.RELEASE.jar jboss-logging-3.3.2.Final.jar aggs-m
+ atrix-stats-client-7.2.0.jar validation-api-2.0.1.Final.jar json-path
+ -2.4.0.jar shiro-lang-1.4.0.jar mybatis-3.4.2.jar netty-common-4.1.36
+ .Final.jar hamcrest-core-1.3.jar netty-codec-http-4.1.36.Final.jar ne
+ tty-codec-4.1.36.Final.jar javax.annotation-api-1.3.2.jar objenesis-2
+ .6.jar jconsole.jar httpcore-4.4.11.jar t-digest-3.2.jar byte-buddy-1
+ .9.13.jar jackson-databind-2.9.9.jar druid-1.0.18.jar jackson-datafor
+ mat-smile-2.9.9.jar shiro-crypto-hash-1.4.0.jar lucene-queries-8.0.0.
+ jar netty-buffer-4.1.36.Final.jar spring-boot-starter-test-2.1.6.RELE
+ ASE.jar asm-5.0.4.jar byte-buddy-agent-1.9.13.jar transport-netty4-cl
+ ient-6.4.3.jar shiro-config-core-1.4.0.jar spring-webmvc-5.1.8.RELEAS
+ E.jar lucene-sandbox-8.0.0.jar spring-test-5.1.8.RELEASE.jar spring-b
+ oot-test-2.1.6.RELEASE.jar commons-codec-1.11.jar tools.jar log4j-api
+ -2.11.2.jar transport-6.2.4.jar jackson-module-parameter-names-2.9.9.
+ jar spring-boot-2.1.6.RELEASE.jar springfox-schema-2.7.0.jar spring-b
+ eans-5.1.8.RELEASE.jar shiro-config-ogdl-1.4.0.jar shiro-core-1.4.0.j
+ ar springfox-core-2.7.0.jar elasticsearch-secure-sm-7.2.0.jar slf4j-a
+ pi-1.7.26.jar jul-to-slf4j-1.7.26.jar elasticsearch-cli-7.2.0.jar com
+ piler-0.9.3.jar elasticsearch-core-7.2.0.jar lucene-memory-8.0.0.jar 
+ lucene-core-8.0.0.jar elasticsearch-rest-high-level-client-7.2.0.jar 
+ netty-transport-4.1.36.Final.jar mybatis-spring-boot-autoconfigure-1.
+ 2.0.jar HdrHistogram-2.1.9.jar jstl-1.2.jar spring-core-5.1.8.RELEASE
+ .jar jcl-over-slf4j-1.7.26.jar shiro-web-1.4.0.jar classmate-1.4.0.ja
+ r spring-boot-starter-web-2.1.6.RELEASE.jar elasticsearch-geo-7.2.0.j
+ ar jts-1.13.jar mybatis-spring-1.3.1.jar spring-boot-autoconfigure-2.
+ 1.6.RELEASE.jar jackson-datatype-jdk8-2.9.9.jar log4j-1.2.17.jar shir
+ o-crypto-core-1.4.0.jar rank-eval-client-6.2.4.jar elasticsearch-7.2.
+ 0.jar jopt-simple-5.0.2.jar json-smart-2.3.jar spring-boot-starter-jd
+ bc-2.1.6.RELEASE.jar spatial4j-0.6.jar httpclient-4.5.9.jar springfox
+ -spring-web-2.7.0.jar springfox-spi-2.7.0.jar parent-join-client-6.2.
+ 4.jar spring-jcl-5.1.8.RELEASE.jar spring-boot-devtools-2.1.6.RELEASE
+ .jar reflections-0.9.11.jar springfox-swagger-ui-2.6.1.jar elasticsea
+ rch-rest-client-6.4.3.jar hppc-0.7.1.jar jackson-dataformat-yaml-2.9.
+ 9.jar slf4j-log4j12-1.7.26.jar httpasyncclient-4.1.4.jar android-json
+ -0.0.20131108.vaadin1.jar shiro-crypto-cipher-1.4.0.jar jackson-annot
+ ations-2.9.0.jar spring-boot-test-autoconfigure-2.1.6.RELEASE.jar luc
+ ene-suggest-8.0.0.jar lucene-misc-8.0.0.jar HikariCP-3.2.0.jar joda-t
+ ime-2.10.2.jar spring-tx-5.1.8.RELEASE.jar spring-plugin-core-1.2.0.R
+ ELEASE.jar lucene-spatial-8.0.0.jar mapstruct-1.1.0.Final.jar shiro-e
+ vent-1.4.0.jar
+Main-Class: com.xchen.SpringbootdemoApplication
+

@@ -1,3 +1,4 @@
+/*
 package com.xchen.utils;
 
 import org.apache.http.HttpHost;
@@ -40,3 +41,4 @@ public class ESClient {
     }
 
 }
+*/

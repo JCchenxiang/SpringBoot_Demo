@@ -1,3 +1,4 @@
+/*
 package com.xchen.utils;
 
 import org.elasticsearch.client.transport.TransportClient;
@@ -36,3 +37,4 @@ public  class ElasticSearchUtils {
         return client;
     }
 }
+*/
